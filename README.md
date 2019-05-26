@@ -7,5 +7,17 @@
 <p> Check out the <b>REQUIRED.txt</b> file for more details </p>
 <br/>
 
+## You can seperate out the files and folders as below after you have downloaded or cloned the repo.
+<b>Main Folder</b>
+
+confusion-react-native
+
+<b>Sub Folder</b>
+
+1. confusion [Every file and folder in the 'confusion-react-native' folder except folder 'json-server' and file 'REQUIRED.txt']
+2. json-server
+3. REQUIRED.txt
+<br/>
+
 ## Course
 [Multiplatform Mobile App Development with React Native](https://www.coursera.org/learn/react-native)
