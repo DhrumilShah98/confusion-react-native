@@ -1,0 +1,94 @@
+Coursera
+========
+Multiplatform Mobile App Development with React Native
+======================================================
+From: The Hong Kong University of Science and Technology
+========================================================
+React Native Project: 'confusion' - Name of the application
+.
+.
+.
+First of all:
+Clone the given project or Download the zip and unzip it.
+Set it up in your PC.
+.
+My expo project: https://exp.host/@dhrumilshah98/confusion
+.
+.
+.
+---------------------------
+-----:INSTALLATIONS:-------
+---------------------------
+(1.) Following Installations are required globally:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+json-server@0.14.2   [To serve up the files in json-server folder.
+expo-cli@2.16.1      [To run the project in your browser and then scan the QR code to serve up the application in Android and iOS]
+exp@54.0.1	     [If you want to build the project] - Not necessary
+react-devtools@3.2.3 [For debugging] - Not necessary
+
+Use 'yarn' or 'npm' to install the above packages
+To check installed global packages:
+NPM: npm -g list --depth 0
+YARN: yarn global list
+
+(2.) For local packages installation:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 1: Open command prompt
+Step 2: Navigate to the 'confusion' folder
+Step 3: Type the below command
+Use 'npm' or 'yarn' to install the packages in 'package.json' file
+Commands:
+NPM: npm install --save
+YARN: yarn install
+
+(3.) Install the 'expo' app on your mobile
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Open App/Play Store on your iOS/Android device and install expo app.
+.
+.
+.
+---------------------------
+-----:USEFUL COMMANDS:-----
+---------------------------
+(1.) If using IPv4 Address of your PC [i.e Not using ngrok.exe]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 1: Open command prompt
+Step 2: Type command 'ipconfig'
+Step 3: Copy the IPv4 address of your computer
+Step 4: In 'confusion/shared/baseUrl.js' replace the given line with 
+	export const baseUrl = '<IPv4_ADDRESS_OF_YOUR_PC>:<3001>/'
+Step 5: Open command prompt if closed
+Step 6: Navigate to 'json-server' folder where you installed your project in command prompt.
+Step 7: Type the below command to start the server
+	'json-server --host IPv4_ADDRESS_OF_YOUR_PC db.json -p 3001 -d 2000'
+
+(2.) If you are using 'ngrok.exe', then follow the below steps:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 1: Open tool 'ngrok.exe'
+Step 2: Run command 'ngrok http 3001'
+Step 3: Copy the 'http address' 
+	[It will be in the form of 'http://<RANDOM_NUMBER>.ngrok.io' ]
+Step 4: In 'confusion/shared/baseUrl.js' replace the given line with 
+	export const baseUrl = '<ADDRESS_COPIED_IN_STEP_3>/'
+Step 5: Open Command Prompt
+Step 6: Navigate to 'json-server' folder where you installed your project in command prompt.
+Step 7: Type the below command to start the server
+	'json-server --watch db.json -p 3001 -d 2000'
+
+NOTE NOTE: I USED '3001' as the PORT_NUMBER to run the server. You can use any other port
+	   if you wish too. Just replace the PORT_NUMBER of your choice every where in 
+	   the above steps.
+.
+.
+.
+---------------------------
+-----:TO RUN THE APP:------
+---------------------------
+
+Step 1: Open command prompt
+Step 2: Navigate to 'confusion' folder where you installed your project in command prompt.
+Step 3: Type the below command
+	'yarn start' or 'npm start'
+Step 4: Open the 'expo' app you installed on your device
+Step 5: Scan the QR code from your device and the app will start.
+	[INSTALLATIONS and USEFUL COMMANDS are required to run the app]
